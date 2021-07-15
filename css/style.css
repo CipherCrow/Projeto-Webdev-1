@@ -35,80 +35,77 @@ header.principal .container {
   z-index: 1;
   color: white;
 }
-header.principal section.nav-cabecalho {
+section.nav-cabecalho {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
-header.principal section.nav-cabecalho .logo h2 {
+section.nav-cabecalho .logo h2 {
   font-size: 2rem;
   text-transform: uppercase;
   color: white;
   font-weight: normal;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
-header.principal section.nav-cabecalho .principal nav.desktop li {
+nav.desktop li {
   display: inline-block;
   padding-right: 1.5rem;
 }
-header.principal section.nav-cabecalho .principal nav.desktop li a {
+nav.desktop li a {
   text-decoration: none;
   font-size: 1.8rem;
   color: white;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
-header.principal section.nav-cabecalho .principal nav.desktop li a:hover {
+nav.desktop li a:hover {
   font-weight: bolder;
   color: rgba(225, 225, 225, 0.8);
   transition: .7s;
   font-size: 1.9rem;
 }
-header.principal section.nav-cabecalho .principal nav.desktop .btn-nav {
+nav.desktop .btn-nav {
   border: .3rem solid white;
   border-radius: 3rem;
   padding: .3rem .8rem;
 }
-header.principal section.nav-cabecalho .principal nav.desktop .btn-nav a {
+nav.desktop .btn-nav a {
   display: inline-block;
 }
-header.principal section.cta-header {
+section.cta-header {
   margin: 10rem 0;
 }
-header.principal section.cta-header h2 {
+section.cta-header h2 {
   font-size: 4.5rem;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
   font-weight: normal;
 }
-header.principal section.cta-header p {
+section.cta-header p {
   font-size: 1.8rem;
   margin-top: 1rem;
 }
-header.principal section.cta-header form {
+.cta-form {
   margin-top: 1rem;
 }
-header.principal section.cta-header form input[type=email] {
+.cta-form input {
   display: inline-block;
-  border-radius: 2rem;
-  background-color: white;
   width: 23.7rem;
   height: 3.5rem;
   border: 0;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+}
+.cta-form input[type=email] {
+  background-color: white;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   padding-left: 1rem;
-  font-size: 1.8rem;
   color: gray;
 }
-header.principal section.cta-header form input[type=submit] {
-  display: inline-block;
+.cta-form input[type=submit] {
   background-color: #ff5f27;
-  border-radius: 2rem;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  width: 23.7rem;
-  height: 3.5rem;
-  border: 0;
   cursor: pointer;
   color: white;
-  font-size: 1.8rem;
 }

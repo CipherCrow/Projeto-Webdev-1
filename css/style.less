@@ -37,88 +37,83 @@ header.principal{
         z-index: 1;
         color: white;
     }
-    section.nav-cabecalho{
-        display: flex;
-        justify-content: space-between;
-        text-decoration: none;
-        .logo h2{
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: white;
-            font-weight: normal;
-            .sombraCabecalho();
-        }
-        .principal{
-            nav.desktop{
-                li{
-                    display: inline-block;
-                    padding-right: 1.5rem;
-                    a{
-                        text-decoration: none;
-                        font-size: 1.8rem;
-                        color: white;
-                        .sombraCabecalho();
-                    }
-                    a:hover{
-                        font-weight: bolder;
-                        color: rgba(225, 225, 225, .8);
-                        transition: .7s;
-                        font-size: 1.9rem;
-                    }
-                }
-                .btn-nav{
-                    border: .3rem solid white;
-                    border-radius: 3rem;
-                    padding: .3rem .8rem;
-                }
-                .btn-nav a{
-                    display: inline-block;
-                }
-            }
-            nav.mobile{
-
-            }
-        }
-    }
-    section.cta-header{
-        margin: 10rem 0;
-        h2{
-            font-size: 4.5rem;
-            .sombraCabecalho();
-            font-weight: normal;
-        }
-        p{
-            font-size: 1.8rem;
-            margin-top: 1rem;
-        }
-        form{
-            margin-top: 1rem;
-            input[type=email]{
-                display: inline-block;
-                border-radius: 2rem;
-                background-color: white;
-                width: 23.7rem;
-                height: 3.5rem;
-                border:0;
-                border-bottom-right-radius: 0;
-                border-top-right-radius: 0;
-                padding-left: 1rem;
-                font-size: 1.8rem;
-                color: gray;
-            }
-            input[type=submit]{
-                display: inline-block;
-                background-color: #ff5f27;
-                border-radius: 2rem;
-                border-bottom-left-radius: 0;
-                border-top-left-radius: 0;
-                width: 23.7rem;
-                height: 3.5rem;
-                border:0;
-                cursor: pointer;
-                color: white;
-                font-size: 1.8rem;
-            }    
-        } 
+}
+section.nav-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    .logo h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: normal;
+        .sombraCabecalho();
     }
 }
+nav.desktop{
+    li{
+        display: inline-block;
+        padding-right: 1.5rem;
+        a{
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+            .sombraCabecalho();
+        }
+        a:hover{
+            font-weight: bolder;
+            color: rgba(225, 225, 225, .8);
+            transition: .7s;
+            font-size: 1.9rem;
+        }
+    }
+    .btn-nav{
+        border: .3rem solid white;
+        border-radius: 3rem;
+        padding: .3rem .8rem;
+    }
+    .btn-nav a{
+        display: inline-block;
+    }
+}
+// nav.mobile{
+
+// }
+section.cta-header{
+    margin: 10rem 0;
+    h2{
+        font-size: 4.5rem;
+        .sombraCabecalho();
+        font-weight: normal;
+    }
+    p{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+}
+.cta-form{
+    margin-top: 1rem;
+    input{
+        display: inline-block;
+        width: 23.7rem;
+        height: 3.5rem;
+        border:0;
+        border-radius: 2rem;
+        font-size: 1.8rem;
+    }
+    input[type=email]{
+        background-color: white;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: 1rem;
+        color: gray;
+    }
+    input[type=submit]{
+        background-color: #ff5f27;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        cursor: pointer;
+        color: white;
+    }    
+} 
