@@ -114,7 +114,7 @@ nav.mobile ul li .btn-nav {
   display: inline-block;
 }
 section.cta-header {
-  padding: 10rem 0;
+  padding-top: 18rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -122,7 +122,7 @@ section.cta-header {
   text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
 section.cta-header h2 {
-  font-size: 4.5rem;
+  font-size: 4.8rem;
   font-weight: normal;
 }
 section.cta-header p {
@@ -190,9 +190,9 @@ section.cta-header p {
 }
 @media screen and (max-width: 500px) {
   .cta-form input[type=email] {
-    width: 60%;
+    width: 55%;
   }
   .cta-form input[type=submit] {
-    width: 40%;
+    width: 45%;
   }
 }
