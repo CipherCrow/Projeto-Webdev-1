@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   font-size: 10px;
@@ -60,14 +63,15 @@ section.nav-cabecalho nav a {
 }
 section.nav-cabecalho nav a:hover {
   font-weight: bolder;
-  color: rgba(225, 225, 225, 0.8);
+  color: #ff5f27;
   font-size: 2rem;
   font-weight: normal;
 }
 section.nav-cabecalho nav .btn-nav {
-  border: .3rem solid white;
+  border: .3rem solid #ff5f27;
   border-radius: 3rem;
   padding: .3rem .8rem;
+  transition: .3s;
 }
 section.nav-cabecalho nav .btn-nav a {
   display: inline-block;
@@ -110,7 +114,11 @@ nav.mobile ul li .btn-nav {
   display: inline-block;
 }
 section.cta-header {
-  margin: 10rem 0;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
   text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
 section.cta-header h2 {
@@ -149,10 +157,12 @@ section.cta-header p {
 }
 .cta-form input[type=submit]:hover {
   opacity: .9;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   .nav-cabecalho {
-    position: relative;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: #31475e;
