@@ -17,7 +17,7 @@ body {
 header.principal {
   background-image: url("../images/bg.jpg");
   min-height: 60rem;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   background-size: cover;
   background-position: center;
 }
@@ -40,44 +40,81 @@ section.nav-cabecalho {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  padding: 0 1rem;
 }
 section.nav-cabecalho .logo h2 {
   font-size: 2rem;
+  padding: 1.5rem 0;
   text-transform: uppercase;
   color: white;
   font-weight: normal;
-  text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
+  text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
+}
+section.nav-cabecalho nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
+  transition: .3s;
+  font-weight: lighter;
+}
+section.nav-cabecalho nav a:hover {
+  font-weight: bolder;
+  color: rgba(225, 225, 225, 0.8);
+  font-size: 2rem;
+  font-weight: normal;
+}
+section.nav-cabecalho nav .btn-nav {
+  border: .3rem solid white;
+  border-radius: 3rem;
+  padding: .3rem .8rem;
+}
+section.nav-cabecalho nav .btn-nav a {
+  display: inline-block;
 }
 nav.desktop li {
   display: inline-block;
   padding-right: 1.5rem;
 }
-nav.desktop li a {
-  text-decoration: none;
-  font-size: 1.8rem;
+nav.mobile {
+  display: none;
+}
+nav.mobile i {
+  font-size: 3rem;
   color: white;
-  text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
+  cursor: pointer;
+  text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
-nav.desktop li a:hover {
-  font-weight: bolder;
-  color: rgba(225, 225, 225, 0.8);
-  transition: .7s;
-  font-size: 1.9rem;
+nav.mobile ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 4.5rem;
+  width: 100%;
+  list-style: none;
 }
-nav.desktop .btn-nav {
-  border: .3rem solid white;
-  border-radius: 3rem;
-  padding: .3rem .8rem;
+nav.mobile ul li {
+  background-color: #31475e;
+  text-align: center;
+  padding: .8rem;
 }
-nav.desktop .btn-nav a {
+nav.mobile ul li a {
+  display: block;
+  font-size: 2.1rem;
+  text-shadow: none;
+}
+nav.mobile ul li a:hover {
+  font-size: 2.1rem;
+}
+nav.mobile ul li .btn-nav {
   display: inline-block;
 }
 section.cta-header {
   margin: 10rem 0;
+  text-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
 }
 section.cta-header h2 {
   font-size: 4.5rem;
-  text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.534);
   font-weight: normal;
 }
 section.cta-header p {
@@ -108,4 +145,22 @@ section.cta-header p {
   border-top-left-radius: 0;
   cursor: pointer;
   color: white;
+  transition: .3s;
+}
+.cta-form input[type=submit]:hover {
+  opacity: .9;
+}
+@media screen and (max-width: 1024px) {
+  .nav-cabecalho {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #31475e;
+  }
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile {
+    display: inline-block;
+  }
 }
