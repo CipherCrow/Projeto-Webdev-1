@@ -139,6 +139,10 @@ section.cta-header{
 }
 .cta-form{
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
     input{
         display: inline-block;
         width: 23.7rem;
@@ -177,5 +181,18 @@ section.cta-header{
     }
     nav.desktop{display: none;}
     nav.mobile{display: inline-block;}
-    
+    .cta-texto{
+        text-align: center;
+        width: 100%;
+        p{margin: 1rem;}
+    }
+    .cta-form{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px){
+    .cta-form{
+        input[type=email]{width: 60%;}
+        input[type=submit]{width: 40%;}
+    }
 }
