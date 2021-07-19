@@ -174,7 +174,7 @@ section.cta-header{
     }    
 }
 
-                //descricao empresa e mockup
+                //descricao
 .descricao-empresa{
     text-align: center;
     padding: 3rem 0;
@@ -213,7 +213,32 @@ section.cta-header{
         margin-top: 2rem;
     }
 }
-
+.descricao-depoimento{
+    padding: 3rem 0 6rem;
+    .container{
+        max-width: 96rem;
+        background-image: url(../images/bg2.jpg);
+        background-size: cover;
+        min-height: 35rem;
+        position: relative;
+    }
+}
+.box-depoimento{
+    position: absolute;
+    left: 35%;
+    width: 60%;
+    max-width: 50.6rem;
+    background-color: white;
+    padding: 0rem 3rem;
+    bottom: -10%;
+    box-shadow: 0 .8rem 2rem 0 rgba(0, 0, 0, 0.5);
+    p{
+        .tamanhoNormal();
+        color: #31475e;
+        margin: 2.4rem;
+        font-weight: lighter;
+    }
+}
 
                 //responsivo
 @media screen and (max-width:1024px){
@@ -245,10 +270,25 @@ section.cta-header{
         text-align: center;
         p{margin: 2rem 0;}
     }
+    .descricao-depoimento{
+        .container{
+            position: initial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .box-depoimento{
+        position: inherit;
+        text-align: center;
+    }
 }
 @media screen and (max-width:500px){
     .cta-form{
         input[type=email]{width: 55%;}
         input[type=submit]{width: 45%;}
+    }
+    .box-depoimento{
+        width: 90%;
     }
 }
