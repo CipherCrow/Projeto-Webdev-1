@@ -177,6 +177,32 @@ section.cta-header p {
   font-style: italic;
   color: #444444;
 }
+.descricao-mockup {
+  padding: 3.5rem 0;
+}
+.descricao-mockup .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.descricao-mockup img {
+  max-width: 100%;
+}
+.mockup-texto {
+  width: 40%;
+}
+.mockup-texto h2 {
+  color: #31475e;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+.mockup-texto p {
+  color: #6a7c92;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
 @media screen and (max-width: 1024px) {
   .nav-cabecalho {
     position: fixed;
@@ -200,6 +226,17 @@ section.cta-header p {
   }
   .cta-form {
     justify-content: center;
+  }
+  /* descricao */
+  .descricao-mockup .container {
+    flex-direction: column;
+  }
+  .mockup-texto {
+    width: 80%;
+    text-align: center;
+  }
+  .mockup-texto p {
+    margin: 2rem 0;
   }
 }
 @media screen and (max-width: 500px) {

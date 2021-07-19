@@ -174,7 +174,7 @@ section.cta-header{
     }    
 }
 
-                //descricao empresa
+                //descricao empresa e mockup
 .descricao-empresa{
     text-align: center;
     padding: 3rem 0;
@@ -187,7 +187,32 @@ section.cta-header{
         color:rgb(68, 68, 68);
     }
 }
-
+.descricao-mockup{
+    padding: 3.5rem 0;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.mockup-texto{
+    width: 40%;
+    h2{
+        color: #31475e;
+        font-weight: normal;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    p{
+        color:#6a7c92;
+        .tamanhoNormal();
+        line-height: 2.5rem;
+        margin-top: 2rem;
+    }
+}
 
 
                 //responsivo
@@ -208,6 +233,17 @@ section.cta-header{
     }
     .cta-form{
         justify-content: center;
+    }
+    /* descricao */
+    .descricao-mockup{
+        .container{
+            flex-direction: column;
+        }
+    }
+    .mockup-texto{
+        width: 80%;
+        text-align: center;
+        p{margin: 2rem 0;}
     }
 }
 @media screen and (max-width:500px){
