@@ -289,7 +289,8 @@ section.cta-header p {
   cursor: pointer;
 }
 .servico-texto a:hover {
-  color: #ff5f27;
+  color: white;
+  background-color: #ff5f27;
 }
 .contato {
   padding: 3rem 0;
@@ -334,6 +335,31 @@ section.cta-header p {
 .form-contato input[type=submit]:hover {
   opacity: .9;
   color: black;
+}
+footer {
+  background-color: #31475e;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.single-footer {
+  width: 32%;
+  text-align: center;
+  color: white;
+}
+.single-footer h2 {
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+.single-footer p {
+  margin-top: 1rem;
+  font-weight: lighter;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 1024px) {
   .nav-cabecalho {
@@ -384,6 +410,15 @@ section.cta-header p {
   .single-servico {
     width: 90%;
     max-width: 38rem;
+  }
+  footer .container {
+    flex-direction: row;
+  }
+  .single-footer {
+    width: 90%;
+  }
+  .single-footer p {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 500px) {

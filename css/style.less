@@ -297,7 +297,8 @@ section.cta-header{
         cursor: pointer;
     }
     a:hover{
-        color:#ff5f27;
+        color:white;
+        background-color: #ff5f27;
     }
 }
                 //contato
@@ -347,7 +348,31 @@ section.cta-header{
     }
 }
                 //footer
-
+footer{
+    background-color: #31475e;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.single-footer{
+    width: 32%;
+    text-align: center;
+    color: white;
+    h2{
+        font-weight: normal;
+        font-size: 2.2rem;
+    }
+    p{
+        margin-top: 1rem;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+}
                 //responsivo
 @media screen and (max-width:1024px){
     .nav-cabecalho{
@@ -394,6 +419,18 @@ section.cta-header{
     .single-servico{
         width: 90%;
         max-width: 38rem;
+    }
+    //footer
+    footer{
+        .container{
+            flex-direction: row;
+        }
+    }
+    .single-footer{
+        width: 90%;
+        p{
+            margin-bottom: 2rem;
+        }
     }
 }
 @media screen and (max-width:500px){
