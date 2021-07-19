@@ -17,6 +17,9 @@ body {
   padding: 0 2%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 header.principal {
   background-image: url("../images/bg.jpg");
   position: relative;
@@ -229,6 +232,64 @@ section.cta-header p {
   margin: 2.4rem;
   font-weight: lighter;
 }
+.servicos {
+  padding: 3rem 0;
+}
+.servicos .container {
+  max-width: 111rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header-section {
+  width: 100%;
+  text-align: center;
+  font-size: 2.1rem;
+  color: #31475e;
+  margin-bottom: 3rem;
+}
+.header-section h2 {
+  font-weight: normal;
+}
+.single-servico {
+  background-color: #ffffff;
+  width: 32%;
+  border-radius: .3rem;
+  box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+.single-servico img {
+  width: 100%;
+}
+.servico-texto {
+  padding: 1.5rem;
+  text-align: center;
+}
+.servico-texto h3 {
+  color: #31475e;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.servico-texto p {
+  font-weight: lighter;
+  color: #6a7c92;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  line-height: 1.8rem;
+}
+.servico-texto a {
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  border: .1rem solid #ff5f27;
+  color: #6a7c92;
+  transition: .3s;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+.servico-texto a:hover {
+  color: #ff5f27;
+}
 @media screen and (max-width: 1024px) {
   .nav-cabecalho {
     position: fixed;
@@ -273,6 +334,11 @@ section.cta-header p {
   .box-depoimento {
     position: inherit;
     text-align: center;
+  }
+  /* servicos */
+  .single-servico {
+    width: 90%;
+    max-width: 38rem;
   }
 }
 @media screen and (max-width: 500px) {

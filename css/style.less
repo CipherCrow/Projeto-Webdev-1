@@ -20,6 +20,7 @@ html,body{
     padding: 0 2%;
     margin: 0 auto;
 }
+a{text-decoration: none;}
                     //cabecalho
 header.principal{
     background-image: url("../images/bg.jpg");
@@ -239,6 +240,65 @@ section.cta-header{
         font-weight: lighter;
     }
 }
+                    //servicos
+.servicos{
+    padding: 3rem 0;
+    .container{
+        max-width: 111rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+.header-section{
+    width: 100%;
+    text-align: center;
+    font-size: 2.1rem;
+    color: #31475e;
+    h2{
+        font-weight: normal;
+    }
+    margin-bottom: 3rem;
+}
+.single-servico{
+    background-color: #ffffff;
+    width: 32%;
+    border-radius: .3rem;
+    box-shadow: 0 .2rem .3rem 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    img{
+        width: 100%;
+    }
+}
+.servico-texto{
+    padding: 1.5rem;
+    text-align: center;
+    h3{
+        color: #31475e;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    p{
+        font-weight: lighter;
+        color: #6a7c92;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        line-height: 1.8rem;
+    }
+    a{
+        display: inline-block;
+        padding: .6rem 1.2rem;
+        border: .1rem solid #ff5f27;
+        color: #6a7c92;
+        transition: .3s;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+    }
+    a:hover{
+        color:#ff5f27;
+    }
+}
 
                 //responsivo
 @media screen and (max-width:1024px){
@@ -282,13 +342,20 @@ section.cta-header{
         position: inherit;
         text-align: center;
     }
+    /* servicos */
+    .single-servico{
+        width: 90%;
+        max-width: 38rem;
+    }
 }
 @media screen and (max-width:500px){
     .cta-form{
         input[type=email]{width: 55%;}
         input[type=submit]{width: 45%;}
     }
+    //depoimento
     .box-depoimento{
         width: 90%;
     }
+    //servicos
 }
