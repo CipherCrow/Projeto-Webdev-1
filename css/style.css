@@ -286,9 +286,54 @@ section.cta-header p {
   transition: .3s;
   border-radius: 1rem;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 .servico-texto a:hover {
   color: #ff5f27;
+}
+.contato {
+  padding: 3rem 0;
+}
+.contato .container {
+  max-width: 96rem;
+}
+.form-contato {
+  margin: 1rem 0;
+  text-align: center;
+}
+.form-contato input:not([type=submit]) {
+  width: 100%;
+  height: 4rem;
+  border-radius: 100px;
+  border: .1rem solid #ebebeb;
+  margin-top: .8rem;
+  padding-left: 1rem;
+}
+.form-contato textarea {
+  width: 100%;
+  height: 12rem;
+  padding: 1rem;
+  resize: vertical;
+  border: .1rem solid #ebebeb;
+  border-radius: 2rem;
+  margin-top: .8rem;
+}
+.form-contato input[type=submit] {
+  display: inline-block;
+  width: 13rem;
+  height: 3.8rem;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10rem;
+  background-color: #ff5f27;
+  box-shadow: 0 8px 20px 0 rgba(244, 244, 244, 0.5);
+  transition: .3s;
+  margin: 1rem 0 3rem;
+}
+.form-contato input[type=submit]:hover {
+  opacity: .9;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   .nav-cabecalho {
